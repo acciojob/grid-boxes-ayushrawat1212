@@ -1,1 +1,35 @@
 /*  your css code here. If applicable */
+#grid {
+	display: grid;	
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+
+	grid-template-areas: 
+	    "a a a a"
+		"b c d d"
+		"b e e f"
+		"b g h i"
+		"b j j j";
+	gap: 5px;
+
+	height: 90vh; /* Gives the grid container physical height */
+  box-sizing: border-box;
+}
+
+div {
+	background-color: green;
+	color: white;
+  font-size: 24px;
+  padding: 5px;
+}
+
+#a { grid-area: a; }
+#b { grid-area: b; }
+#c { grid-area: c; }
+#d { grid-area: d; }
+#e { grid-area: e; }
+#f { grid-area: f; }
+#g { grid-area: g; }
+#h { grid-area: h; }
+#i { grid-area: i; }
+#j { grid-area: j; }
